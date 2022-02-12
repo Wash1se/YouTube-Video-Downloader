@@ -1,8 +1,6 @@
 import subprocess
 import os
-
 done = False
-
 try:
 	from pytube import YouTube
 	done = True
@@ -16,7 +14,6 @@ except:
 	except:
 		print("Не удалось установть необходимые модули :(")
 		done = False
-
 if done == True:
 	if not os.path.isdir("videos"):
 	     Fol = os.mkdir("videos")
